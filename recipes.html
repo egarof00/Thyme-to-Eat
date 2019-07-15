@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      Thyme to Eat: Recipes
+    </title>
+    <link rel="stylesheet" href="recipe.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <script src="recipe.js"></script>
+    <script src="https://www.w3schools.com/lib/w3.js"></script>
+  </head>
+  <body>
+    <div class="w3-top">
+      <div class=w3-bar>
+        <div class="w3-bar w3-black">
+          <div class="w3-dropdown-hover w3-mobile">
+            <button class="w3-button"><a href="recipe.html"><img src="https://cdn3.iconfinder.com/data/icons/restaurant-2-1/2134/table_setting_plate_fork_spoon_restaurant-512.png" length="30px" width="30px"></a><i class="fa fa-caret-down"></i></button>
+            <div class="w3-dropdown-content w3-bar-block w3-dark-grey">
+              <a href="#about" class="w3-bar-item w3-button w3-mobile">About</a>
+              <a href="#developers" class="w3-bar-item w3-button w3-mobile">Developers</a>
+              <a href="#contact" class="w3-bar-item w3-button w3-mobile">Contact Information</a>
+            </div>
+          </div>
+          <a href="recipes.html" class="w3-bar-item w3-button w3-mobile">Recipes</a>
+          <a href="foodpuns.html" class="w3-bar-item w3-button w3-mobile">Food Puns</a>
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div>
+      <h1>Featured Recipes</h1>
+      <ul>
+        <li><a href=#vegancoconutcurry>Vegan Coconut Curry</a></li>
+        <li><a href=#fries>French Fries</a></li>
+        <li><a href=#chickentortillasoup>Chicken Tortilla Soup</a></li>
+        <li><a href=#10minutequesadillas>10 Minute Quesadillas</a></li>
+        <li><a href=#dessert>Stuffed Churro Cookies</a></li>
+      </ul>
+    </div>
+    <br>
+    <div>
+      <button onclick="w3.show('.recimages')">All</button>
+      <button onclick="w3.show('.notdessert'); w3.hide('.nonvegan')">Vegan</button>
+      <button onclick="w3.show('.nonvegan'); w3.hide('.notdessert')">Dessert</button
+    </div>
+    <br>
+    <br>
+    <center>
+      <div class="recimages notdessert" id="vegancoconutcurry">
+        <img src="https://hurrythefoodup.com/wp-content/uploads/2017/09/Vegan-Coconut-Curry-6.jpg" length='100px' width='100px' alt="Vegan Cocunut Curry">
+        <a href="https://hurrythefoodup.com/vegan-coconut-curry/" target="_blank"><button class="btn">Recipe</button></a>
+        <p>Vegan coconut curry combines the variety of flavors curry provides along with accessibility to vegans so that they don't miss out!</p>
+      </div>
+      <br><br>
+      <div class="recimages nonvegan notdessert" id="fries">
+        <img src="https://recipes.timesofindia.com/thumb/54659021.cms?width=1200&height=1200" alt="French Fries">
+        <a href="https://www.foodnetwork.com/recipes/ree-drummond/perfect-french-fries-recipe2-2120420" target="_blank"><button class="btn">Recipe</button></a>
+        <p>You can not go wrong with the classic French fries, widely accessible to a variety of demographics!</p>
+      </div>
+      <br><br>
+      <div class="recimages nonvegan notdessert" id="chickentortillasoup">
+        <img src="https://www.cookingclassy.com/wp-content/uploads/2017/07/grilled-chicken-tortilla-soup-3.jpg" alt="Chicken Tortilla Soup">
+        <a href="https://www.spendwithpennies.com/chicken-tortilla-soup/" target="_blank"><button class="btn">Recipe</button></a>
+        <p>Chicken Tortilla Soup provides the soul of hispanic cuisine but with a healthier twist!</p>
+      </div>
+      <br><br>
+      <div class="recimages nonvegan notdessert" id="10minutequesadillas">
+        <img src="https://cookieandkate.com/images/2017/09/10-minute-quesadilla-recipe-3-768x1151.jpg" alt="10 minute quesadillas">
+        <a href="https://cookieandkate.com/quick-quesadillas-recipe/" target="_blank"><button class="btn">Recipe</button></a>
+        <p>These quesadillas are quick and easy to make, perfect for a relaxing lunch!</p>
+      </div>
+      <br><br>
+      <div class="recimages nonvegan" id="dessert">
+        <img src="https://images-gmi-pmc.edge-generalmills.com/92665dae-d397-4b02-a632-4afe4810f2f7.jpg" alt="Stuffed churro cookies">
+        <a href="https://www.pillsbury.com/recipes/stuffed-churro-cookies/57be617e-566d-4d62-8ec2-b959379917da" target="_blank"><button class="btn">Recipe</button></a>
+        <p>If you're feeling a little adventurous in your diet, then this dessert is perfect for you!</p>
+      </div>
+      <br><br>
+      <div class="recimages notdessert">
+        <img src="https://www.connoisseurusveg.com/wp-content/uploads/2015/11/vegan-pho-featured.jpg" alt="Vegan Pho">
+        <a href="https://www.connoisseurusveg.com/easy-vegan-pho/" target="_blank"><button class="btn">Recipe</button></a>
+        <p>Everyone loves a good Pho recipe. A good <em>vegan<em> pho recipe is even better! This soup is the perfect comfort recipe for vegans and nonvegans alike!</p>
+      </div>
+      <br><br>
+      <div class="recimages notdessert">
+        <img src="https://minimalistbaker.com/wp-content/uploads/2015/04/30-minute-CHICKPEA-Sweet-Potato-BUDDHA-Bowls-A-complete-meal-packed-with-protein-fiber-and-healthy-fats-with-a-STELLAR-Tahini-Lemon-Maple-Sauce-vegan-glutenfree-healthy-683x1024.jpg" alt="Vegan Buddha Bowl">
+        <a href="https://minimalistbaker.com/sweet-potato-chickpea-buddha-bowl/" target="_blank"><button class="btn">Recipe</button></a>
+        <p>Hungry for a healthy and delicious meal?? Then this vegan buddha bowl is for you!An easy and delicious recipe for any meal of the day!</p>
+      </div>
+      <br><br>
+      <div class="recimages nonvegan">
+        <img src="https://img.buzzfeed.com/thumbnailer-prod-us-east-1/fb2da9f1eb574cf4bab1261eb741dd7d/final.jpg" alt="Rainbow Crepe Cake">
+        <a href="https://tasty.co/recipe/rainbow-crepe-cake" target="_blank"><button class="btn">Recipe</button></a>
+        <p>Do you want a dessert that is both instagrammable and delicious? Then the Rainbow Crepe Cake is right up your alley!</p>
+      </div>
+      <br><br>
+      <div class="recimages notdessert nonvegan">
+        <img src="https://www.daringgourmet.com/wp-content/uploads/2015/12/Fettuccine-Alfredo-5.jpg" alt="fettucine alfredo">
+        <a href="https://www.delish.com/cooking/recipe-ideas/a55312/best-homemade-fettuccine-alfredo-recipe/" target="_blank"><button class="btn">Recipe</button></a>
+        <p>I bet we can all agree that alfredo is extremely delicious. Here is an easy recipe so that you can make your own like a pro!</p>
+      </div>
+      <br><br>
+      <div class="recimages">
+        <img src="https://assets.blog.foodnetwork.ca/files/2015/05/vegan-peanut-butter-cups.jpg" alt="Vegan Peanut Butter Cups">
+        <a href="https://www.foodnetwork.ca/comfort-food/blog/easy-vegan-peanut-butter-cups-35302/" target="_blank"><button class="btn">Recipe</button></a>
+        <p>Ohhhh my gosh these look so good. If you are a chocolate lover, you are DEFINITELY going to love these, and they only require two ingredients from your kitchen!</p>
+      </div>
+      <br><br>
+      <div class="recimages">
+        <img src="https://media.foodnetwork.ca/recipetracker/dmm/V/E/Vegan_Chocolate_Cupcakes_001.jpg" alt="Vegan chocolate cupcakes">
+        <a href="https://www.foodnetwork.ca/recipe/vegan-chocolate-cupcakes/13673/" target="_blank"><button class="btn">Recipe</button></a>
+        <p>Never again will your vegan soul be left without delicious desserts. These cupcakes are the most yummy and fun to bake treats for any vegan that needs a late night snack.</p>
+      </div>
+      <br><br>
+      <div class="recimages notdessert nonvegan">
+        <img src="https://images.media-allrecipes.com/userphotos/560x315/4019381.jpg" alt="Lasagna Flatbread">
+        <a href="https://www.allrecipes.com/recipe/255462/lasagna-flatbread/?internalSource=staff%20pick&referringId=1947&referringContentType=Recipe%20Hub&clickId=cardslot%204" target="_blank"><button class="btn">Recipe</button></a>
+        <p>Lasagna and pizza are two different meals that are both suuuper delicious, but now you never have to decide between them ever again!</p>
+      </div>
+      <br><br>
+      <div class="recimages nonvegan notdessert">
+        <img src="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2018/5/1/0/FNK_Buffalo-Chicken-Enchiladas-H1_s4x3.jpg.rend.hgtvcom.826.620.suffix/1525187347682.jpeg" alt="Buffalo Chicken Enchiladas">
+        <a href="https://food.fnr.sndimg.com/content/dam/images/food/fullset/2018/5/1/0/FNK_Buffalo-Chicken-Enchiladas-H1_s4x3.jpg.rend.hgtvcom.826.620.suffix/1525187347682.jpeg" target="_blank"><button class="btn">Recipe</button></a>
+        <p>Even looking at them makes my mouth water. These enchiladas are an easy and delicious meal to make for parties, hangouts, or just for yourself!</p>
+      </div>
+      <br><br>
+      <div class="recimages notdessert">
+        <img src="http://wallflowerkitchen.com/wp-content/uploads/2017/05/panini6.jpg" alt="Vegan Caprese Panini">
+        <a href="http://wallflowerkitchen.com/vegan-caprese-panini-tomatoes-basil-cashew-mozzarella/" target="_blank"><button class="btn">Recipe</button></a>
+        <p> This panini is a nice refreshing meal, especially during the summer time, and it takes minutes to make!</p>
+      </div>
+      <br>
+      <div class="recimages nonvegan">
+        <img src="https://www.tasteofhome.com/wp-content/uploads/2018/04/Mini-Blueberry-Tarts_EXPS_THCA18_164498_D01_12_5b-2-696x696.jpg" alt="Mini Blueberry Tarts">
+        <a href="https://www.tasteofhome.com/recipes/mini-blueberry-tarts/" target="_blank"><button class"btn">Recipe</button></a>
+        <p>These cute lil tarts can impress any crowd. They are super addicting desserts that are super fun to share with others!</p>
+      </div>
+  </center>
+  </body>
+</html>
